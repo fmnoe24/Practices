@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 90%;
+    height: 80vh;
+    margin: 20px auto;
+
+    display: grid;
+    grid-template-columns: [inicio]1fr  
+                           [medio-2]1fr 
+                           [medio-3] 1fr[final]; /*Con los corchetes se le da nombre y en vez de utilizar número podemos utilizar el nombre asignado ej en el contenido N°3*/
+    
+    grid-template-rows: [inicial primera-start]1fr  
+                        [primera-end segunda-start]1fr  
+                        [segunda-end tercera-start] 1fr[final-end tercera-end];  /*Se le peude dar hasta 2 nombres para un mismo valos*/
+
+
+
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr;
+
+}
+
+section div:first-child {
+    background-color: orange;
+    grid-column-start: 2;
+}
+
+section div:nth-of-type(2){
+    background-color: aqua; 
+    grid-column-start: 2;
+
+}
+section div:nth-of-type(3){
+    background-color: fuchsia;
+    /*grid-column-start: inicio;
+    grid-row:  primera-start/tercera-start;*/
+
+    grid-area: inicial/inicio/tercera-start/2; /*Esta propiedad recibe los 4 valores de row/column/row/column */
+
+}
+
+section div:nth-of-type(6){
+    background-color: royalblue;
+    grid-column-start: 3;
+
+}
+section div:nth-of-type(7){
+    background-color: rebeccapurple;
+    grid-column-start: 2;
+    grid-row-start: 3;
+
+}
+
+div {
+    border: 1px solid black;
+    background-color: khaki;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

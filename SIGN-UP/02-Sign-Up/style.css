@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.contactForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+    width: 350px;
+    border-radius: 30px;
+    background-color: linear-gradient(144deg, #eae1e1, #c5bdbd);
+    box-shadow: 23px 23px 40px #a09999,
+               -23px -23px 40px #ffffff;
+}
+
+.contentForm {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.inputBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactForm h1 {
+    position: absolute;
+    top: 70px;
+    font-size: 40px;
+    letter-spacing: 3px;
+    transition: 0.7s;
+}
+
+.contactForm h1:hover {
+    font-size: 50px;
+    cursor: pointer;
+    letter-spacing: 5px;
+}
+
+input label {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.inputBox input {
+    padding: 5px 30px;
+    border: 1px solid #000;
+    outline: none;
+    transition: 0.7s;
+    border-radius: 25px;
+    background: transparent;
+}
+
+.inputBox input:focus,
+.inputBox input:valid {
+    color: #fff;
+    box-shadow: inset 300px 0 #000;
+}
+
+.contactForm button {
+    position: absolute;
+    bottom: 100px;
+    padding: 7px 45px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    transition: 0.7s;
+    background: transparent;
+}
+
+.contactForm button:hover {
+    transform: scale(120%);
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 2px;
+}

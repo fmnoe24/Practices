@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 90%;
+    height: 80vh;
+    margin: 20px auto;
+
+    display: grid;
+
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr;
+
+    grid-template-areas: "header header header" 
+                         "izq izq der" 
+                         "izq izq ." 
+                         "footer footer footer"; 
+    /*Con esto indicamos la cantidad de columnas y filas que queremos en la grilla. las comillas indicarían una grilla de 4 filas*/
+    /*TODAS LAS FILAS TIENEN QUE TENER LA MISMA CANTIDAD DE COLUMNAS*/
+    /*En caso de querer dejar un hueco en alguna de las área se pone un punto*/
+}
+
+section div:first-child {
+    background-color: orange;
+    grid-area: header;
+}
+
+section div:nth-of-type(2){
+    background-color: aqua; 
+    grid-area: izq;
+}
+section div:nth-of-type(3){
+    background-color: fuchsia;
+    grid-area: der;
+
+}
+
+section div:nth-of-type(4){
+    background-color: lime;
+    grid-area: footer;
+}
+
+
+div {
+    border: 1px solid black;
+    background-color: khaki;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

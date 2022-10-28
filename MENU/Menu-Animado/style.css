@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2? family= Fredoka+One & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka One", cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0b0b0b;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+}
+
+ul li a{
+    position: relative;
+    font-size: 5em;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: 2px;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(255,255,255,0.5); /*Especifica el ancho y el color de los trazos de los caracteres de texto*/
+}
+
+ul li a::before{
+    content: attr(data-text); /**se usa para recuperar el valor de un atributo (Es decir que va a imprimir en patalla el valor asigado en el HTML)*/
+    position: absolute;
+    color: transparent;
+    width: 0%;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 8px solid var(--clr);
+    -webkit-text-stroke: 2px var(--clr); /*Varaible creada en el HTML*/
+}
+
+ul li a:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr)); /*Aplica efecto de luminosidad*/
+}

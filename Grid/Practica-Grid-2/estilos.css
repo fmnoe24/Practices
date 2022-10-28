@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#principal{
+    display: grid;
+    grid-template-columns: 50% 50%; /*ESTABLECEMOS LAS COLUMNAS*/
+}
+
+#principal div{
+    background-color: #ecf0f1;
+    padding: 1em;
+}
+
+#principal div:hover {
+    border: 1px solid #f1c40f;
+}

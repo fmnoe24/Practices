@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #d2d9e4;
+    font-family: sans-serif;
+}
+
+
+section {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.reloj {
+    display: inline-block;
+    background-color: #d1dae3;
+    color: #71767f;
+    padding: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    border: 4px solid #cad3dc;
+    border-radius: 4px;
+    box-shadow: -8px -8px 15px rgb(255, 255, 255, 0.5),
+                10px 10px 10px rgb(0, 0, 0, 0.1),
+                inset -8px -8px 15px rgb(255, 255, 255, 0.5),
+                inset 10px 10px 10px rgb(0, 0, 0, 0.1);
+}
