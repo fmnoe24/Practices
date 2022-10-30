@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image | 01</title>
+
+    <style>
+        body {
+            background-color: #0c0c0c;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        img {
+            cursor: pointer;
+            transition: all 2s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Img.jpg" alt="Image Hover Zoom">
+    </div>
+</body>
+</html>
