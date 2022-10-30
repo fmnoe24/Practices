@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section {
+            background-color: rgb(249, 152, 168);
+            width: 90%;
+            height: 80vh;
+            margin: auto; /*Indico que el contenido quede centrado*/
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /*Determino la cantidad de columnas. El Repeat(N° de Col, Unidad de Medida), funciona igual que decir grid-template-columns: 1fr 1fr 1fr*/
+        }
+        div{
+            border: 1px solid brown;
+            background-color: khaki;
+            display: flex;/*El display flex es para afectar al Párrafo*/
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <p>Contenido del 1</p>
+        </div>
+        <div>
+            <p>Contenido del 2</p>
+        </div>
+        <div>
+            <p>Contenido del 3</p>
+        </div>
+        <div>
+            <p>Contenido del 4</p>
+        </div>
+        <div>
+            <p>Contenido del 5</p>
+        </div>
+        <div>
+            <p>Contenido del 6</p>
+        </div>
+        <div>
+            <p>Contenido del 7</p>
+        </div>
+        <div>
+            <p>Contenido del 8</p>
+        </div>
+        <div>
+            <p>Contenido del 9</p>
+        </div>
+    </section>
+</body>
+</html>
