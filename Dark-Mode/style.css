@@ -39,7 +39,7 @@
     border: none;
     border-radius: 20px;
     box-shadow: inset 0 0 10px #252525;
-    cursor: pointer;
+    
 }
 
 .dark-button {
@@ -52,7 +52,7 @@
     border: 2px solid #252525;
     border-radius: 20px;
     box-shadow: none;
-    cursor: pointer;
+    
 }
 
 .circle {
@@ -62,6 +62,7 @@
     transform: translateX(7px);
     border-radius: 50px;
     transition: .5s;
+    cursor: pointer;
 }
 
 .dark-circle {
@@ -71,6 +72,7 @@
     transform: translateX(65px);
     border-radius: 50px;
     transition: .5s;
+    cursor: pointer;
 }
 
 h1 {
