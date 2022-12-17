@@ -78,9 +78,15 @@ a, button {
     100% {background-position:  15% 20%;}
 }
 
-@media (width >= 500px){
+@media (min-width: 500px){
     .login-card {
         margin: 0;
         width: 400px;
+    }
+}
+@media (max-width: 499px){
+    .login-card {
+        margin: 0;
+        width: 300px;
     }
 }
