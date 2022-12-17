@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Background - https://uigradients.com/ */
+body {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    color: #fff;  
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.ppal {
+    background-color: #110e2c;
+    box-shadow: -1px 1px 7px 0px rgba(12, 4, 32, 0.75);
+    border-radius: 2%;
+    width: 450px;
+    height: 420px;
+}
+.card {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    margin: 1.5em;
+}
+input {
+    text-align: center;
+}
+.check {
+    padding: 1em 0;
+}
+div h3 {
+    margin: 55px 0;
+}
+
+#btnGenerate {
+    margin: 1.5em 0;
+    padding: 1em;
+}
+span {
+    font-weight: bold;
+    background-color: #110e2c;
+    box-shadow: -1px 1px 7px 0px rgba(0 , 0, 0, 0.75);
+    width: 100%;
+    border-radius: 0%;
+    padding: 0.6em;
+}
+
+footer {
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+@media (max-width: 450px) {
+    .ppal {
+        border-radius: 2%;
+        width: 320px;
+        height: 350px;
+        font-size: .8em
+    }
+    #btnGenerate {
+        margin: 1.5em 0;
+        padding: .7em;
+    }
+}

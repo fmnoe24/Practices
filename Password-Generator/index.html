@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password-Generator</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="ppal">
+            <div class="card">
+                <div>
+                    <h3>Generador de Contraseñas</h3>
+                </div>
+                <div>
+                    <label for="inputLength" class="form-label">Longitud</label>
+                    <input type="number" id="inputLength" min="1" max="32" value="14" />
+                </div>
+                <div class="check">
+                    <div>
+                        <input type="checkbox" id="checkbox1" class="form-check-input" />
+                        <label  for="checkbox1">Incluír Números</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="checkbox2" class="form-check-input" />
+                        <label for="checkbox2">Incluír Símbolos</label>
+                    </div>
+                </div>
+                <div class="">
+                    <button id="btnGenerate" >Generar Contraseña</button>
+                </div>
+                <div class="">
+                    <span id="generatedPassword" >-----------------------------</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                © Fernando Matías Noé ||  2022
+            </p>
+        </footer>   
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
